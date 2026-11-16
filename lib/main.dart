@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'screens/detalhe_geladeira_screen.dart';
 import 'screens/geladeiras_screen.dart';
 import 'tema.dart';
 
@@ -20,6 +21,7 @@ class GeladeiraSolidariaApp extends StatelessWidget {
       routes: {
         '/': (context) => const GeladeirasScreen(),
         '/geladeiras': (context) => const GeladeirasScreen(),
+        '/detalhe': (context) => const DetalheGeladeiraScreen(), // recebe o id da geladeira
       },
     );
   }
