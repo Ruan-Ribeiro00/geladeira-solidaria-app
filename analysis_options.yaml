@@ -1,0 +1,18 @@
+# Regras de lint recomendadas para apps Flutter.
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    - build/**
+    - android/**
+  errors:
+    # A partir do Flutter 3.47 o import 'package:flutter/material.dart' virou
+    # "deprecated" (os widgets foram para o pacote material_ui). Mantemos o import
+    # clássico, que é o usado nas aulas e funciona em todas as versões do Flutter.
+    deprecated_member_use: ignore
+
+linter:
+  rules:
+    prefer_const_constructors: true
+    prefer_final_fields: true
+    avoid_print: true
