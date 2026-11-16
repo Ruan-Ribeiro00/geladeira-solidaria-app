@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'screens/geladeiras_screen.dart';
 import 'tema.dart';
 
 void main() {
@@ -15,24 +16,11 @@ class GeladeiraSolidariaApp extends StatelessWidget {
       title: 'Geladeira Solidária',
       debugShowCheckedModeBanner: false,
       theme: temaApp(),
-      home: const Scaffold(
-        body: Center(
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              LogoApp(tamanho: 96),
-              SizedBox(height: 16),
-              Text(
-                'Geladeira Solidária',
-                style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold, color: Cores.verdeEscuro),
-              ),
-              SizedBox(height: 4),
-              Text('Comida boa não vai pro lixo, vai pra quem precisa.',
-                  style: TextStyle(color: Cores.textoSuave)),
-            ],
-          ),
-        ),
-      ),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const GeladeirasScreen(),
+        '/geladeiras': (context) => const GeladeirasScreen(),
+      },
     );
   }
 }
