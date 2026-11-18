@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'screens/detalhe_geladeira_screen.dart';
 import 'screens/geladeiras_screen.dart';
+import 'screens/login_screen.dart';
 import 'tema.dart';
 
 void main() {
@@ -19,7 +20,7 @@ class GeladeiraSolidariaApp extends StatelessWidget {
       theme: temaApp(),
       initialRoute: '/',
       routes: {
-        '/': (context) => const GeladeirasScreen(),
+        '/': (context) => const LoginScreen(),
         '/geladeiras': (context) => const GeladeirasScreen(),
         '/detalhe': (context) => const DetalheGeladeiraScreen(), // recebe o id da geladeira
       },
