@@ -8,8 +8,8 @@
 | Ruan Ribeiro | 567693 | 2TDSPA |
 
 **Grupo:** Geladeira Solidária Inteligente
-**Vídeo de demonstração (emulador):** _colar aqui o link do YouTube (não listado)_
-**App publicado (APK):** _colar aqui o link da Release do GitHub_
+**Vídeo de demonstração (emulador):** https://youtu.be/wZetgJfhDLk
+**App publicado (APK):** https://github.com/Ruan-Ribeiro00/geladeira-solidaria-app/releases
 
 ---
 
